@@ -2,24 +2,25 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+    <meta name="google-signin-client_id" content="91051663058-ifvh64dgv5sehbh4tfdaangmi54emm8e.apps.googleusercontent.com">
     <title>Login Form</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <form action="form" id="login">
             <h1 class="formTitle">Login</h1>
-            <div class="formInputDetails">
-                <input type="text" class="inputDetails" autofocu placeholder="Username">
-            </div>
-            <div class="formInputDetails">
-                <input type="text" class="inputDetails" autofocu placeholder="Password">
-            </div>
-            <button class="formButton" type="submit">Log in</button>
+          
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
 
-        </form>
+
     </div>
+    
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 
-    <script src=".\donorhub\main.js"></script>
+
+    <script src=".\main.js"></script>
 </body>
 </html>
