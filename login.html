@@ -6,25 +6,22 @@
     <title>Login Form</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-            <img src="avatar.png" class="avatar">
-            <h1 class="formTitle">DonorHub</h1>
-            <p class ="formMsg">Sign in through your Google account:</p>
-
-          
+        <img src="avatar.png" class="avatar">
+        <p class="formMsg">Sign in through your Google account:</p>
         <div class="g-signin2" data-onsuccess="onSignIn"></div>
-        <img src="logo.png" class="logo" alt="logo">
-
-
+        
+        <div class="logo-and-title">
+            <h1 class="formTitle">DonorHub</h1>
+            <img src="logo.png" class="logo" alt="logo">
+        </div>
     </div>
     
     <script src="https://apis.google.com/js/platform.js" async defer></script>
-
-
     <script src=".\main.js"></script>
 </body>
 </html>
