@@ -35,4 +35,18 @@ document.addEventListener('DOMContentLoaded', function() {
             location.reload();
         });
     }
+
+    var aboutLogoAndTitle = document.querySelector('.about-logo-and-title');
+    if (aboutLogoAndTitle) {
+        aboutLogoAndTitle.addEventListener('click', function() {
+            window.location.href = 'http://localhost:5500/homepage.html';
+        });
+    }
+
+    var contactLogoAndTitle = document.querySelector('.contact-logo-and-title');
+    if (contactLogoAndTitle) {
+        contactLogoAndTitle.addEventListener('click', function() {
+            window.location.href = 'http://localhost:5500/homepage.html';
+        });
+    }
 });
