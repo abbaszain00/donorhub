@@ -13,6 +13,26 @@ function onSignIn(googleUser) {
     // Here, you would handle the sign-in process, like sending the token to your server
 }
 
-document.getElementById('homeLogin').addEventListener('click', function(){
-    window.location.href = 'http://localhost:5500/login.html';
+document.addEventListener('DOMContentLoaded', function() {
+    var redirectHomeElement = document.getElementById('redirectHome');
+    if (redirectHomeElement) {
+        redirectHomeElement.addEventListener('click', function() {
+            window.location.href = 'http://localhost:5500/homepage.html';
+        });
+    }
+
+    var homeLoginElement = document.getElementById('homeLogin');
+    if (homeLoginElement) {
+        homeLoginElement.addEventListener('click', function() {
+            window.location.href = 'http://localhost:5500/login.html';
+        });
+    }
+
+    // Code to refresh the page when the home logo and title are clicked
+    var homeLogoAndTitle = document.querySelector('.home-logo-and-title');
+    if (homeLogoAndTitle) {
+        homeLogoAndTitle.addEventListener('click', function() {
+            location.reload();
+        });
+    }
 });
