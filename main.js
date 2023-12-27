@@ -12,3 +12,7 @@ function onSignIn(googleUser) {
 
     // Here, you would handle the sign-in process, like sending the token to your server
 }
+
+document.getElementById('homeLogin').addEventListener('click', function(){
+    window.location.href = 'http://localhost:5500/login.html';
+});
