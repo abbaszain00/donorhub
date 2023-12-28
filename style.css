@@ -238,3 +238,62 @@ body {
     align-items: center;
     cursor: pointer;
 }
+
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-family: 'Roboto bold', sans-serif;
+    letter-spacing: 1px;
+    min-height: 20vh;
+    /* border: black solid; */
+
+}
+
+.box h2 {
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    
+}
+
+.box p{
+    padding-left: 5px;
+    font-size: smaller;
+}   
+
+.column1 {
+    background-color: rgba(214, 212, 212, 0.813);
+    border: black solid;
+    border-right: none;
+
+}
+.column2 {
+    background-color: rgba(214, 212, 212, 0.813);
+    border: black solid;
+    border-right: none;
+
+
+}
+.column3 {
+    background-color: rgba(214, 212, 212, 0.813);
+    border: black solid;
+    border-right: none;
+
+}
+.column4 {
+    background-color: rgba(214, 212, 212, 0.813);
+    border: black solid;
+
+}
+
+.pic {
+    background-image: url(medical.jpg);
+    background-size: cover; /* Cover the entire div */
+    background-position: center; /* Center the image */
+    height: 600px; /* Set to desired height */
+    width: 100%; /* Full width of the page */
+}
+
+
+
